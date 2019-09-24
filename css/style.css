@@ -330,7 +330,7 @@ hr {
     content: '';
     display: inline-block;
     margin-top: 20px;
-    width: 245px;
+    width: 100%;
     background-color: #cfcfcf;
     height: 2px;
 }
