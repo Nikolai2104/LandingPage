@@ -1,0 +1,117 @@
+@media (max-width: 1199px) {
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    menu .main ul {
+        display: none;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .education .container h2 {
+        margin-top: 60px;
+    }
+
+    .education .container .image {
+        display: none;
+    }
+
+    .education .contant {
+        padding: 0;
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .teachers .container .teachers-list .person:nth-last-of-type(-n+3) {
+        padding-bottom: 60px;
+    }
+
+    .teachers .container .teachers-list .person:last-child {
+        padding-bottom: 110px;
+    }
+
+    .clients .container .slider-cl .photo:first-child,
+    .clients .container .slider-cl .photo:last-child {
+        display: none;
+    }
+    footer .container{
+        justify-content: center;
+    }
+    footer .container .logo{
+        flex: 1 1 100%;
+    }
+    footer .main ul{
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    header menu .logo {
+        flex: 1 1 90%;
+    }
+    header h1{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .clients .container .slider-cl .photo{
+        display: none;
+    }
+    .clients .container .slider-cl .active{
+        display: block;
+    }
+}
+
+@media (max-width: 730px) {
+    .blog .contant .section {
+        display: none;
+    }
+    .blog .contant .section.active {
+        display: block;
+    }
+    .newsletter .form{
+        height: 320px;
+        flex-direction: column;
+        padding: 60px 0;
+    }
+    .newsletter .form h3 {
+        text-align: center;
+        width: 90%;
+    }
+    
+    .newsletter .form input {
+        width: 90%;
+    }
+    .contact .container {
+        justify-content: baseline;
+        flex-wrap: wrap;
+    }
+    .contact .container .left{
+        padding: 0;
+        width: 100%;
+        margin: 0;
+    }
+    .contact .container .right{
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        margin-top: 40px;
+    }
+    .contact .container .right .map {
+        width: 100%;
+        margin: 0;
+    }
+    
+}
