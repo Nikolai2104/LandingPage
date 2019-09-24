@@ -82,12 +82,12 @@
 }
 
 @media (max-width: 730px) {
-    .blog .contant .section {
+    /* .blog .contant .section {
         display: none;
     }
     .blog .contant .section.active {
         display: block;
-    }
+    } */
     .newsletter .form{
         height: 320px;
         flex-direction: column;
