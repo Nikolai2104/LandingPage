@@ -4,6 +4,11 @@
         margin: 0 auto;
     }
 
+    .burger-menu {
+        display: block;
+    }
+
+
     menu .main ul {
         display: none;
     }
@@ -11,7 +16,8 @@
     p {
         font-size: 16px;
     }
-    footer .main ul{
+
+    footer .main ul {
         font-size: 12px;
     }
 }
@@ -21,10 +27,16 @@
     header menu .logo {
         flex: 1 1 90%;
     }
-    .headline span{
+
+    .burger-menu__nav{
+        width: 50%;
+    }
+
+    .headline span {
         line-height: 1.5em;
         text-align: center;
     }
+
     .education .container h2 {
         margin-top: 60px;
     }
@@ -57,96 +69,118 @@
     .clients .container .slider-cl .photo:last-child {
         display: none;
     }
-    footer .container{
+
+    footer .container {
         justify-content: center;
     }
-    footer .container .logo{
+
+    footer .container .logo {
         flex: 1 1 100%;
     }
-    footer .main ul{
+
+    footer .main ul {
         display: none;
     }
 }
 
 @media (max-width: 767px) {
-    header h1{
+    header h1 {
         text-align: center;
         padding-bottom: 50px;
     }
-    .clients .container .slider-cl .photo{
+
+    .clients .container .slider-cl .photo {
         display: none;
     }
-    .clients .container .slider-cl .active{
+
+    .clients .container .slider-cl .active {
         display: block;
     }
 }
 
 @media (max-width: 730px) {
+
     /* .blog .contant .section {
         display: none;
     }
     .blog .contant .section.active {
         display: block;
     } */
-    .newsletter .form{
+    .newsletter .form {
         height: 320px;
         flex-direction: column;
         padding: 60px 0;
     }
+
     .newsletter .form h3 {
         text-align: center;
         width: 90%;
     }
-    
+
     .newsletter .form input {
         width: 90%;
     }
+
     .contact .container {
         justify-content: baseline;
         flex-wrap: wrap;
     }
-    .contact .container .left{
+
+    .contact .container .left {
         padding: 0;
         width: 100%;
         margin: 0;
     }
-    .contact .container .right{
+
+    .contact .container .right {
         padding: 0;
         width: 100%;
         margin: 0;
         margin-top: 40px;
     }
+
     .contact .container .right .map {
         width: 100%;
         margin: 0;
     }
-    
+
 }
+
 @media (max-width: 480px) {
-    header menu .logo{
+    header menu .logo {
         margin: 0;
     }
+
     header menu .logo span {
         font-size: 20px;
         margin-left: 10px;
     }
-    h1{
+
+    .burger-menu__nav{
+        width: 80%;
+    }
+
+    h1 {
         margin-top: 20%;
         font-size: 50px;
     }
+
     .courses .container .courses-section {
         flex-direction: column;
     }
+
     .courses .container .courses-section .section {
         width: 100%;
         margin: 60px 0 0 0;
     }
+
     .courses .container .courses-section .section .photo {
         width: 100%;
     }
+
     footer .logo span {
         font-size: 20px;
         margin-left: 10px;
     }
-    
+
 }

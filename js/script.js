@@ -65,3 +65,75 @@ $('#blog').slick({
     }
   ]
 });
+
+// burger-menu
+
+var button = document.querySelector('.burger-menu__button');
+var menu = document.querySelector('.burger-menu');
+var overlay = document.querySelector('.burger-menu__overlay');
+
+function burgerMenu() {
+  if(menu.classList.contains('burger-menu_active')){
+    menu.classList.remove('burger-menu_active');
+  } else {
+      menu.classList.add('burger-menu_active');
+  }
+}
+console.log(button);
+console.log(menu);
+button.addEventListener('click', burgerMenu);
+overlay.addEventListener('click', burgerMenu);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function burgerMenu(selector) {
+//   let menu = $(selector);
+//   let button = menu.find('.burger-menu__button');
+//   let links = menu.find('.burger-menu__link');
+//   let overlay = menu.find('.burger-menu__overlay');
+//   button.on('click', (e) => {
+//     e.preventDefault();
+//     toggleMenu();
+//   })
+
+//   links.on('click', () => toggleMenu());
+//   overlay.on('click', () => toggleMenu());
+
+//   function toggleMenu() {
+//     menu.toggleMenu('burger-menu_active');
+
+//     if(menu.hasClass('burger-menu_active')){
+//       $('body').css('overflow', 'hidden');
+//     } else {
+//       $('body').css('overflow', 'visible');
+//     }
+//   }
+// }
+
+
+// burgerMenu('.burger-menu');

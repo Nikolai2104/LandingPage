@@ -94,6 +94,112 @@ header menu .logo span {
     margin-left: 40px;
 }
 
+.burger-menu {
+    display: none;
+}
+
+.burger-menu__button {
+    position: fixed;
+    top: 45px;
+    right: 50px;
+    z-index: 30;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #27ae60;
+    transition: all 0.5s;
+}
+
+.burger-menu__button:hover .burger-menu__lines {
+    filter: brightness(0.7);
+}
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.burger-menu__lines::after {
+    top: 6px;
+    content: '';
+}
+
+.burger-menu__lines::before {
+    top: -6px;
+    content: '';
+}
+
+.burger-menu_active .burger-menu__lines {
+    background-color: transparent;
+}
+
+.burger-menu_active .burger-menu__lines::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.burger-menu_active .burger-menu__lines::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.burger-menu__nav {
+    margin-top: -70px;
+    padding-top: 70px;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    background-color: #27ae60;
+    overflow-y: auto;
+    right: -100%;
+    transition: all 0.5s;
+}
+
+.burger-menu_active .burger-menu__nav {
+    right: 0;
+}
+
+.burger-menu__lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.burger-menu__link {
+    padding: 30px;
+    font-size: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.burger-menu__link:hover {
+    filter: brightness(0.7);
+}
+
+.burger-menu__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.burger-menu_active .burger-menu__overlay {
+    display: block;
+}
+
 header menu nav.main {
     flex: 2 1 70%;
     display: flex;
@@ -163,9 +269,10 @@ header .container .headline button:hover {
 }
 
 /* ============================================= introduction ============================================= */
-.education{
+.education {
     margin-top: 60px;
 }
+
 .education .container {
     display: flex;
     align-items: center;
@@ -188,7 +295,8 @@ header .container .headline button:hover {
     justify-content: right;
     text-align: left;
 }
-.education .contant h2{
+
+.education .contant h2 {
     margin: 0;
 }
 
@@ -578,10 +686,11 @@ hr {
     top: 50%;
 }
 
-.clients .container .description{
+.clients .container .description {
     text-align: center;
 }
-.clients .container .description p{
+
+.clients .container .description p {
     display: inline-block;
     width: 50%;
     text-align: center;
@@ -741,7 +850,8 @@ hr {
     display: flex;
     justify-content: space-between;
 }
-.contact .container .left{
+
+.contact .container .left {
     width: 50%;
     padding-right: 15px;
 }
@@ -781,11 +891,12 @@ hr {
     cursor: pointer;
 }
 
-.contact .container .right{
+.contact .container .right {
     overflow: hidden;
     width: 50%;
     padding-left: 15px;
 }
+
 .contact .container .right .map {
     height: 300px;
     width: 555px;
@@ -900,6 +1011,3 @@ footer nav.main ul li a::after {
 footer nav.main ul li a:hover::after {
     transform: scale(1);
 }
-
-
-
