@@ -79,10 +79,53 @@ function burgerMenu() {
       menu.classList.add('burger-menu_active');
   }
 }
-console.log(button);
-console.log(menu);
+
 button.addEventListener('click', burgerMenu);
 overlay.addEventListener('click', burgerMenu);
+
+// clientSlider ========================================
+
+var btnClP = $('#prev-cl')
+var btnClN = $('#next-cl');
+let clientsPh = $('#clients-photo .photo');
+let clientsDs = $('#clients-description .description');
+let current = 2;
+
+function slidClN(){
+  for (let i = 0; i < clientsPh.length; i++) {
+    clientsPh[i].classList.remove('active');
+    clientsDs[i].classList.remove('active');
+    // clientsPh[!i].classList.remove('active');
+    // clientsDs[!i].classList.remove('active');
+  }
+  if(current +1 == clientsPh.length) {
+    current = 0;
+  } else {
+    current++;
+  }
+  clientsDs[current].classList.add('active');
+  clientsPh[current].classList.add('active');
+  console.log(current);
+};
+
+function slidClP(){
+  for (let i = 0; i < clientsPh.length; i++) {
+    clientsPh[i].classList.remove('active');
+    clientsDs[i].classList.remove('active');
+    // clientsPh[!i].classList.remove('active');
+    // clientsDs[!i].classList.remove('active');
+  }
+  if(current == 0) {
+    current = clientsPh.length-1;
+  } else {
+    current--;
+  }
+  clientsDs[current].classList.add('active');
+  clientsPh[current].classList.add('active');
+  console.log(current);
+};
+btnClN.click(slidClN);
+btnClP.click(slidClP);
 
 
 

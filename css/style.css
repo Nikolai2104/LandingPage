@@ -642,28 +642,39 @@ hr {
 
 .clients .container .slider-cl .ph1 {
     background: url(../img/clients/client_1.png) center center no-repeat;
-    filter: brightness(50%)
+    filter: brightness(50%);
+    display: none;
 }
 
 .clients .container .slider-cl .ph2 {
     background: url(../img/clients/client_2.jpg) center center no-repeat;
-    filter: brightness(50%)
+    filter: brightness(50%);
+    display: none;
 }
 
 .clients .container .slider-cl .ph3 {
     background: url(../img/clients/client_3.jpg) center center no-repeat;
     /* filter: brightness(50%) */
-    border: 2px solid #27ae60;
+    filter: brightness(50%);
+    display: none;
 }
 
 .clients .container .slider-cl .ph4 {
     background: url(../img/clients/client_4.jpg) center center no-repeat;
-    filter: brightness(50%)
+    filter: brightness(50%);
+    display: none;
 }
 
 .clients .container .slider-cl .ph5 {
     background: url(../img/clients/client_5.jpg) center center no-repeat;
-    filter: brightness(50%)
+    filter: brightness(50%);
+    display: none;
+}
+
+.clients .container .slider-cl .active{
+    filter: brightness(100%);
+    border: 2px solid #27ae60;
+    display: block;
 }
 
 .clients .container button {
@@ -688,6 +699,10 @@ hr {
 
 .clients .container .description {
     text-align: center;
+    display: none;
+}
+.clients .container .description.active {
+    display: block;
 }
 
 .clients .container .description p {
