@@ -95,8 +95,6 @@ function slidClN(){
   for (let i = 0; i < clientsPh.length; i++) {
     clientsPh[i].classList.remove('active');
     clientsDs[i].classList.remove('active');
-    // clientsPh[!i].classList.remove('active');
-    // clientsDs[!i].classList.remove('active');
   }
   if(current +1 == clientsPh.length) {
     current = 0;
@@ -112,8 +110,6 @@ function slidClP(){
   for (let i = 0; i < clientsPh.length; i++) {
     clientsPh[i].classList.remove('active');
     clientsDs[i].classList.remove('active');
-    // clientsPh[!i].classList.remove('active');
-    // clientsDs[!i].classList.remove('active');
   }
   if(current == 0) {
     current = clientsPh.length-1;

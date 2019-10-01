@@ -682,6 +682,10 @@ hr {
     width: 25px;
     height: 45px;
     border: none;
+    transition: all 0.3s;
+}
+.clients .container button:hover {
+    opacity: 0.6;
 }
 
 .clients .container button.prev {
